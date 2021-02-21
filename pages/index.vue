@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <Logo />
+      <img src="~assets/good-game-logo.svg" />
       <h1 class="title">good-game</h1>
       <div class="links">
         <a
