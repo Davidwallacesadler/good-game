@@ -18,7 +18,6 @@ export default {
       })
     },
     fetchTenGames() {
-      debugger
       this.$store.dispatch(
         `search/fetchTenGames`,
         this.auth.token_type + ` ` + this.auth.access_token
@@ -32,7 +31,7 @@ export default {
     }),
   },
   mounted() {
-    this.fetchIGDBAuth()
+    // this.fetchIGDBAuth()
   },
 }
 </script>
