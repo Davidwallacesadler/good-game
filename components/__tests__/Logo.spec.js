@@ -10,9 +10,3 @@ describe('Logo', () => {
     const wrapper = factory()
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
-
-  test('renders properly', () => {
-    const wrapper = factory()
-    expect(wrapper.html()).toMatchSnapshot()
-  })
-})
