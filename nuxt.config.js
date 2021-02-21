@@ -42,8 +42,16 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseUrl: `https://api.igdb.com/v4`,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  env: {
+    baseUrl: process.env.BASE_URL || `http://localhost:3000`,
+    igdbClientId: process.env.IGDB_CLIENT_ID || null,
+    igdbClientSecret: process.env.IGDB_CLIENT_SECRET || null,
+  },
 }
